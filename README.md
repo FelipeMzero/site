@@ -21,9 +21,9 @@ O Projeto Plantas Medicinais - Oriximiná-PA é uma iniciativa voltada para o p�
 
 ## Tecnologias Utilizadas
 
-- HTML
-- CSS
-- JavaScript
+- ![HTML5](https://img.icons8.com/color/48/000000/html-5.png) HTML
+- ![CSS3](https://img.icons8.com/color/48/000000/css3.png) CSS
+- ![JavaScript](https://img.icons8.com/color/48/000000/javascript.png) JavaScript
 
 ## Como Contribuir
 
