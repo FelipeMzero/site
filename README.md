@@ -5,8 +5,8 @@ Este projeto tem como objetivo fornecer informações sobre as plantas medicinai
 ## Equipe
 
 - Felipe Monteiro - Desenvolvedor Front-end e Back-end
-- Sandy - Desenvolvedora Front-end e UI/UX Designer
-- Flavia Pessoa Monteiro
+- Sandy Soares - Desenvolvedora Front-end e UI/UX Designer
+- Flavia Pessoa Monteiro - Mentora do Projeto
 
 ## Sobre o Projeto
 
