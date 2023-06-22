@@ -51,13 +51,41 @@ window.addEventListener('DOMContentLoaded', () => {
     {
       name: 'Vick',
       image: 'img/vick.jpg',
-      description: 'n faço a minima ideia mas depois coloco.',
+      description: 'Não faço a mínima ideia, mas depois coloco.',
       detailsLink: 'plants/vick.html'
     }
-    
+    // Adicione mais plantas aqui conforme necessário
   ];
 
   const featuredPlantsSection = document.querySelector('.featured-plants');
+  const searchForm = document.querySelector('form');
+  const searchInput = document.querySelector('#search-input');
+  const searchButton = document.querySelector('#search-button');
+  const searchResult = document.querySelector('.search-result');
+
+  // Função para buscar a planta pelo nome
+  const searchPlant = (name) => {
+    // Verificar se a planta existe nos arquivos
+    const plant = plants.find((plant) => plant.name.toLowerCase() === name.toLowerCase());
+
+    if (plant) {
+      // Redirecionar para a página de detalhes da planta encontrada
+      window.location.href = plant.detailsLink;
+    } else {
+      // Exibir mensagem de "Estamos Trabalhando Nisso"
+      window.location.href = 'erro.html';
+    }
+  };
+
+  // Evento de envio do formulário de busca
+  searchForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const searchTerm = searchInput.value.trim();
+
+    if (searchTerm !== '') {
+      searchPlant(searchTerm);
+    }
+  });
 
   // Criação dos cards das plantas
   plants.forEach((plant) => {
