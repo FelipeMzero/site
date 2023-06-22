@@ -60,11 +60,13 @@ window.addEventListener('DOMContentLoaded', () => {
   const featuredPlantsSection = document.querySelector('.featured-plants');
   const searchForm = document.querySelector('form');
   const searchInput = document.querySelector('#search-input');
+  const searchButton = document.querySelector('#search-button');
+  const searchResult = document.querySelector('.search-result');
 
   // Função para buscar a planta pelo nome
   const searchPlant = (name) => {
     // Verificar se a planta existe nos arquivos
-    const plant = plants.find((plant) => plant.name.toLowerCase().includes(name.toLowerCase()));
+    const plant = plants.find((plant) => plant.name.toLowerCase() === name.toLowerCase());
 
     if (plant) {
       // Redirecionar para a página de detalhes da planta encontrada
