@@ -1,4 +1,4 @@
-# Projeto Plantas Medicinais - Oriximiná-PA
+# 🌿 Projeto Plantas Medicinais - Oriximiná-PA
 
 Este projeto tem como objetivo fornecer informações sobre as plantas medicinais presentes na região de Oriximiná, no estado do Pará. Nosso foco é ajudar as pessoas a obterem mais informações sobre as plantas e suas finalidades medicinais.
 
@@ -9,6 +9,8 @@ Este projeto tem como objetivo fornecer informações sobre as plantas medicinai
 - Flavia Pessoa Monteiro - Mentora do Projeto
 
 ## Sobre o Projeto
+**Visite nossa plataforma: [Plantas Medicinais Online](https://felipemzero.github.io/site/)**
+
 
 O Projeto Plantas Medicinais - Oriximiná-PA é uma iniciativa voltada para o público interessado em plantas medicinais e busca promover o conhecimento sobre as espécies encontradas na região de Oriximiná. Nosso objetivo é facilitar o acesso a informações relevantes sobre as plantas, como seus benefícios medicinais, indicações de uso e precauções.
 
