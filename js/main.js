@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
     {
       name: 'Vick',
       image: 'img/vick.jpg',
-      description: 'Não faço a mínima ideia, mas depois coloco.',
+      description: 'É indicado como descongestionante nasal.',
       detailsLink: 'plants/vick.html'
     }
     // Adicione mais plantas aqui conforme necessário
@@ -62,7 +62,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.querySelector('#search-input');
   const searchButton = document.querySelector('#search-button');
   const searchResult = document.querySelector('.search-result');
-
   // Função para buscar a planta pelo nome
   const searchPlant = (name) => {
     // Verificar se a planta existe nos arquivos
@@ -77,15 +76,26 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // Evento de envio do formulário de busca
-  searchForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+  // Função para lidar com o clique no botão "Buscar"
+  const handleSearch = () => {
     const searchTerm = searchInput.value.trim();
 
     if (searchTerm !== '') {
       searchPlant(searchTerm);
     }
+  };
+
+  // Evento de envio do formulário de busca
+  searchForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    handleSearch();
   });
+
+  // Evento de clique no botão "Buscar"
+  searchButton.addEventListener('click', () => {
+    handleSearch();
+  });
+
 
   // Criação dos cards das plantas
   plants.forEach((plant) => {
